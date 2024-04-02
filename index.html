@@ -16,31 +16,29 @@
       <header class="header">
         <div class="container">
           <div class="header__inner">
-            <a href="#" class="header__logo">
+            <a href="index.html" class="header__logo">
               <img src="img/logo1.jpg" alt="Logo" />
             </a>
             <nav class="header__menu menu">
               <ul class="menu__list">
-                <li class="menu__link">
-                  <a href="#">Home</a>
+                <li class="menu__link active">
+                  <a href="#hello">Home</a>
                 </li>
                 <li class="menu__link">
-                  <a href="#">О себе</a>
+                  <a href="#about">О себе</a>
                 </li>
                 <li class="menu__link">
-                  <a href="#">Увлечения</a>
+                  <a href="#hobby">Увлечения</a>
                 </li>
                 <li class="menu__link">
-                  <a href="#">Семья</a>
-                </li>
-                <li class="menu__link">
-                  <a href="#">Контакты</a>
+                  <a href="#contacts">Контакты</a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
       </header>
+      <div id="hello"></div>
       <main class="main">
         <section class="hello">
           <div class="container">
@@ -52,23 +50,32 @@
               </div>
               <div class="hello__column">
                 <div class="hello__header header-block">
-                  <div class="header-block__title">О себе</div>
+                  <div class="header-block__title">Привет!</div>
                   <div class="header-block__text">
-                    Я родом из Нижнего Новгорода. Мне 38 лет. По профессии я
-                    инженер-радиотехник.
+                    Меня зовут Дмитрий Рыбаков!
+                    <br />
+                    Я учусь на WEB-разработчика в Elbrus Bootcamp.
+                    <br />
+                    Здесь я кратко рассказываю о себе и о том, что мне
+                    интересно.
+                    <br />
+                    Добро пожаловать!
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <div id="about"></div>
         <section class="about">
           <div class="container">
             <div class="about__header header-block">
               <div class="header-block__title">О себе</div>
               <div class="header-block__text">
-                Я родом из Нижнего Новгорода. Мне 38 лет. По профессии я
-                инженер-радиотехник.
+                Я родом из Нижнего Новгорода. Мне 38 лет. Закончил местный
+                Политехнический университет по специальности "Радиотехника".
+                Затем отработал целых <em>18!</em> лет в одном секретном НИИ и
+                недавно меня вдруг "осенило", что надо что-то срочно менять...
               </div>
             </div>
             <div class="about__images">
@@ -90,12 +97,18 @@
             </div>
           </div>
         </section>
-        <section class="hobby">
+        <section id="hobby" class="hobby">
           <div class="container">
             <div class="hobby__header header-block">
               <div class="header-block__title">Увлечения</div>
               <div class="header-block__text">
-                Я люблю туриз, активный отдых, велосипед, сплавы на байдарках
+                Я очень люблю все, что связано с активным отдыхом и туризмом: мы
+                с семьей катаемся на велосипедах, ходим в походы пешком и на
+                байдарках, путешествуем на автомобиле по нашей необъятной
+                стране.
+                <br />
+                Но при этом я никогда не откажусь от вечера, проведенного с
+                интересной книгой на любимом диванчике!
               </div>
             </div>
             <div class="hobby__images">
@@ -117,26 +130,65 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section id="contacts" class="contacts">
           <div class="container">
             <div class="contacts__body">
               <div class="contacts__column">
                 <div class="contacts__header header-block">
                   <div class="header-block__title">Контакты</div>
                   <div class="header-block__text">
-                    Я родом из Нижнего Новгорода. Мне 38 лет. По профессии я
-                    инженер-радиотехник.
+                    Если у тебя есть креативные идеи или тебя просто стало
+                    интересно - отправь мне сообщение, я обязательно отвечу!
                   </div>
                 </div>
               </div>
               <div class="contacts__column">
-                <form action="#">"Это форма!</form>
+                <form class="contacts__form" action="#">
+                  <div class="nameinput">
+                    <p>Имя *</p>
+                    <input
+                      class="firstname"
+                      tabindex="1"
+                      type="text"
+                      placeholder="Имя"
+                      name="firstName"
+                    />
+                    <input
+                      class="lastname"
+                      tabindex="2"
+                      type="text"
+                      placeholder="Фамилия"
+                      name="lastName"
+                    />
+                  </div>
+                  <div>
+                    <p>E-mail *</p>
+                    <input
+                      class="email"
+                      tabindex="3"
+                      type="email"
+                      placeholder=""
+                      name="email"
+                    />
+                  </div>
+                  <div>
+                    <p>Сообщение *</p>
+                    <textarea
+                      class="message"
+                      tabindex="4"
+                      name="text"
+                    ></textarea>
+                  </div>
+                  <button class="submit-btn" type="submit">Отправить</button>
+                </form>
               </div>
             </div>
           </div>
         </section>
       </main>
-      <footer class="footer">2024 - Дмитрий Рыбаков</footer>
+      <footer class="footer">
+        2024 - Дизайн <strong><em>by</em></strong> Дмитрий Рыбаков
+      </footer>
     </div>
   </body>
 </html>

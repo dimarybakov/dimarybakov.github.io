@@ -50,19 +50,22 @@ body {
 /*-----------HEADER_BLOCK------------- */
 .header-block__title {
   font-size: 40px;
-  text-align: center;
 
   margin-bottom: 30px;
 }
 
 .header-block__text {
-  font-size: 20px;
-  text-align: center;
+  font-size: 24px;
+  line-height: 150%;
 }
 
 /*-----------HEADER--------------------- */
 
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   background-color: #eeeee4;
 
   padding: 20px 0;
@@ -100,8 +103,19 @@ body {
   text-decoration: none;
 }
 
+.menu__link a:hover {
+  text-decoration: underline;
+  color: brown;
+}
+
+.menu__link.active a {
+  color: brown;
+}
+
 .main {
   flex: 1 1 auto;
+
+  margin-top: 140px;
 }
 
 .hello {
@@ -119,7 +133,11 @@ body {
 }
 
 .hello__header {
-  padding: 50px 20px;
+  margin-top: 100px;
+
+  padding: 50px 40px;
+
+  text-align: center;
 }
 
 .hello__image img {
@@ -131,6 +149,16 @@ body {
 /* -----ABOUT--------- */
 .about {
   background-color: #eeeee4;
+
+  padding: 100px 20px;
+}
+
+.about__header {
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  padding: 0px 50px;
 }
 
 .about__images {
@@ -158,6 +186,14 @@ body {
 /* -----HOBBY---------- */
 .hobby {
   background-color: burlywood;
+
+  padding: 100px 20px;
+}
+
+.hobby__header {
+  text-align: center;
+
+  margin-bottom: 30px;
 }
 
 .hobby__images {
@@ -183,24 +219,90 @@ body {
 }
 
 /* -----CONTACTS */
+.contacts {
+  padding: 100px 20px;
+
+  background-color: #eeeee4;
+}
 .contacts__body {
   display: flex;
-
-  padding: 10px 0px;
 }
 
 .contacts__column {
   flex: 0 1 50%;
+
+  padding: 0 10px;
+}
+
+.contacts__header {
+  text-align: left;
+}
+
+.contacts__form p {
+  margin-bottom: 10px;
+}
+
+.nameinput {
+  margin-bottom: 20px;
+}
+
+.firstname {
+  margin-right: 9%;
+}
+
+.firstname,
+.lastname {
+  width: 45%;
+}
+
+.email {
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+
+.firstname,
+.lastname,
+.email,
+.message {
+  font-family: inherit;
+  font-size: 20px;
+
+  padding: 15px 5px 15px 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.message {
+  width: 100%;
+  height: 150px;
+}
+
+.submit-btn {
+  font-family: inherit;
+  font-size: 20px;
+
+  padding: 20px 50px;
+  background-color: inherit;
+
+  margin-top: 30px;
+
+  border: 1px solid gray;
+
+  cursor: pointer;
 }
 
 /* -----FOOTER--------- */
 
 .footer {
   font-family: Montserrat, sans-serif;
+  font-size: 25px;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 400;
+
+  background-color: burlywood;
 
   text-align: center;
 
-  padding: 20px 20px;
+  padding: 50px 20px;
 }
