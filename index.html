@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/index.css" />
     <title>Portfolio</title>
   </head>
@@ -12,14 +16,26 @@
       <header class="header">
         <div class="container">
           <div class="header__inner">
-            <a href="#" class="header__logo">Logo</a>
+            <a href="#" class="header__logo">
+              <img src="img/logo1.jpg" alt="Logo" />
+            </a>
             <nav class="header__menu menu">
               <ul class="menu__list">
-                <li class="menu__link">Home</li>
-                <li class="menu__link">О себе</li>
-                <li class="menu__link">Мои увлечения</li>
-                <li class="menu__link">Моя семья</li>
-                <li class="menu__link">Мои контакты</li>
+                <li class="menu__link">
+                  <a href="#">Home</a>
+                </li>
+                <li class="menu__link">
+                  <a href="#">О себе</a>
+                </li>
+                <li class="menu__link">
+                  <a href="#">Увлечения</a>
+                </li>
+                <li class="menu__link">
+                  <a href="#">Семья</a>
+                </li>
+                <li class="menu__link">
+                  <a href="#">Контакты</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -31,18 +47,96 @@
             <div class="hello__body">
               <div class="hello__column">
                 <div class="hello__image">
-                  <img src="#" alt="My foto" />
+                  <img src="img/dima.jpg" alt="My foto" />
                 </div>
               </div>
               <div class="hello__column">
-                <div class="hello__text">
-                  Привет, меня зовут Рыбаков Дмитрий!
+                <div class="hello__header header-block">
+                  <div class="header-block__title">О себе</div>
+                  <div class="header-block__text">
+                    Я родом из Нижнего Новгорода. Мне 38 лет. По профессии я
+                    инженер-радиотехник.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <section class="about">
+          <div class="container">
+            <div class="about__header header-block">
+              <div class="header-block__title">О себе</div>
+              <div class="header-block__text">
+                Я родом из Нижнего Новгорода. Мне 38 лет. По профессии я
+                инженер-радиотехник.
+              </div>
+            </div>
+            <div class="about__images">
+              <div class="about__column">
+                <div class="about__item">
+                  <img src="img/nino/1.jpg" alt="NiNo1" />
+                </div>
+              </div>
+              <div class="about__column">
+                <div class="about__item">
+                  <img src="img/nino/gerb.jpg" alt="NiNo2" />
+                </div>
+              </div>
+              <div class="about__column">
+                <div class="about__item">
+                  <img src="img/nino/2.jpg" alt="NiNo3" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="hobby">
+          <div class="container">
+            <div class="hobby__header header-block">
+              <div class="header-block__title">Увлечения</div>
+              <div class="header-block__text">
+                Я люблю туриз, активный отдых, велосипед, сплавы на байдарках
+              </div>
+            </div>
+            <div class="hobby__images">
+              <div class="hobby__column">
+                <div class="hobby__item">
+                  <img src="img/travel.jpg" alt="NiNo1" />
+                </div>
+              </div>
+              <div class="hobby__column">
+                <div class="hobby__item">
+                  <img src="img/swim.jpg" alt="NiNo2" />
+                </div>
+              </div>
+              <div class="hobby__column">
+                <div class="hobby__item">
+                  <img src="img/velo.jpg" alt="NiNo3" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="container">
+            <div class="contacts__body">
+              <div class="contacts__column">
+                <div class="contacts__header header-block">
+                  <div class="header-block__title">Контакты</div>
+                  <div class="header-block__text">
+                    Я родом из Нижнего Новгорода. Мне 38 лет. По профессии я
+                    инженер-радиотехник.
+                  </div>
+                </div>
+              </div>
+              <div class="contacts__column">
+                <form action="#">"Это форма!</form>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
+      <footer class="footer">2024 - Дмитрий Рыбаков</footer>
     </div>
   </body>
 </html>
