@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/nullstyle.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Portfolio</title>
   </head>
@@ -145,16 +146,16 @@
               <div class="contacts__column">
                 <form class="contacts__form" action="#">
                   <div class="nameinput">
-                    <p>Имя *</p>
+                    <label for="firstname">Имя *</label>
                     <input
-                      class="firstname"
+                      id="firstname"
                       tabindex="1"
                       type="text"
                       placeholder="Имя"
                       name="firstName"
                     />
                     <input
-                      class="lastname"
+                      id="lastname"
                       tabindex="2"
                       type="text"
                       placeholder="Фамилия"
@@ -162,9 +163,9 @@
                     />
                   </div>
                   <div>
-                    <p>E-mail *</p>
+                    <label for="email">E-mail *</label>
                     <input
-                      class="email"
+                      id="email"
                       tabindex="3"
                       type="email"
                       placeholder=""
@@ -172,12 +173,8 @@
                     />
                   </div>
                   <div>
-                    <p>Сообщение *</p>
-                    <textarea
-                      class="message"
-                      tabindex="4"
-                      name="text"
-                    ></textarea>
+                    <label for="message">Сообщение *</label>
+                    <textarea id="message" tabindex="4" name="text"></textarea>
                   </div>
                   <button class="submit-btn" type="submit">Отправить</button>
                 </form>
